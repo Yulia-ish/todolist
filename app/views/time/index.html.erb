@@ -1,0 +1,22 @@
+<div style="background-color: <%=@bg%>">
+<h2>
+  <%= @t.strftime("%F %H:%M:%S") %>
+</h2>
+<h2>
+  <%=@k.strftime("%F %H:%M:%S")%>
+</h2>
+<br/>
+<hr/>
+<%=params[:x]%><%=params[:y]%>
+
+<hr/>
+<a href="/?tz=<%=rand(24)%>">Random time zone</a>
+<a href="/">Refresh</a>
+
+<!--<meta http-equiv="refresh" content="5">-->
+
+<style>
+</style>
+
+</div>
+

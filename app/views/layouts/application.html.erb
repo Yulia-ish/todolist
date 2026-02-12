@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>B2b</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+  <a href="/"><img src="https://ir-7.ozone.ru/s3/cms/8e/tf9/wc200/logo-logo-ozon-blue-png.png"> </a>
+  
+  <%= link_to "About", :about %>
+   <hr/>
+  <%= yield %>
+  <%= link_to "Hello", :about %>
+<hr/>
+(C) Yu I Sok 2025
+
+  </body>
+</html>
